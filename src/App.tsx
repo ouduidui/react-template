@@ -6,10 +6,12 @@ import routes from '~react-pages'
 
 export default function App() {
   return (
-    <main className="font-sans px-4 py-10 text-center text-gray-700 dark:text-gray-200">
-      <Router>
-        <Routes />
-      </Router>
+    <main className="font-sans flex flex-col min-h-screen text-center text-gray-700 dark:text-gray-200">
+      <div className="flex-1 container pt-10 m-auto">
+        <Router>
+          <Routes />
+        </Router>
+      </div>
       <Footer />
     </main>
   )
