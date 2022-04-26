@@ -12,6 +12,7 @@ specifiers:
   eslint: ^8.14.0
   jsdom: ^19.0.0
   mobx: ^6.5.0
+  mobx-persist-store: ^1.0.6
   mobx-react-lite: ^3.3.0
   react: ^18.0.0
   react-dom: ^18.0.0
@@ -26,6 +27,7 @@ specifiers:
 
 dependencies:
   mobx: 6.5.0
+  mobx-persist-store: 1.0.6_mobx@6.5.0
   mobx-react-lite: 3.3.0_ec6945183068133ff61c88d19e8f3079
   react: 18.0.0
   react-dom: 18.0.0_react@18.0.0
@@ -2832,6 +2834,14 @@ packages:
   /minimist/1.2.6:
     resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
     dev: true
+
+  /mobx-persist-store/1.0.6_mobx@6.5.0:
+    resolution: {integrity: sha512-GOV1/0H2bMQhsJKpwRrR74c+B7wl9sOSwMeq7ed1PPsIanW/aYVj0RaQDqVOTYKJfeLV9wNGnWk0EATWprNluw==}
+    peerDependencies:
+      mobx: '*'
+    dependencies:
+      mobx: 6.5.0
+    dev: false
 
   /mobx-react-lite/3.3.0_ec6945183068133ff61c88d19e8f3079:
     resolution: {integrity: sha512-U/kMSFtV/bNVgY01FuiGWpRkaQVHozBq5CEBZltFvPt4FcV111hEWkgwqVg9GPPZSEuEdV438PEz8mk8mKpYlA==}
