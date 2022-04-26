@@ -40,6 +40,10 @@ class TodoListStore {
         this.todos.unshift(todo)
     }
   }
+
+  deleteTodo(id: number) {
+    this.todos = this.todos.filter(todo => todo.id !== id)
+  }
 }
 
 const todoListStore = new TodoListStore()
