@@ -34,6 +34,7 @@ export default defineConfig({
         { 'usehooks-ts': ['useCounter', 'useDarkMode'] },
         { mobx: ['configure'] },
         { react: ['createContext'] },
+        { 'mobx-react-lite': ['observer'] },
       ],
       dts: 'src/auto-imports.d.ts',
     }),

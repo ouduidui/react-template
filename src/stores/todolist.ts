@@ -1,6 +1,6 @@
 import { makePersistable } from 'mobx-persist-store'
 
-interface TodoType {
+export interface TodoType {
   id: number
   content: string
   done: boolean
@@ -20,7 +20,7 @@ class TodoListStore {
   }
 
   addTodo(content: string) {
-    this.todos.push({
+    this.todos.unshift({
       id: this.todos.length + 1,
       content,
       done: false,
@@ -29,9 +29,16 @@ class TodoListStore {
   }
 
   todoDone(id: number) {
-    const todo = this.todos.find(todo => todo.id === id)
-    if (todo)
-      todo.done = true
+    const idx = this.todos.findIndex(todo => todo.id === id)
+    if (idx !== -1) {
+      const todo = this.todos[idx]
+      todo.done = !todo.done
+      this.todos = this.todos.filter(t => t !== todo)
+      if (todo.done)
+        this.todos.push(todo)
+      else
+        this.todos.unshift(todo)
+    }
   }
 }
 

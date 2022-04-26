@@ -21,6 +21,7 @@ declare global {
   const NavLink: typeof import('react-router-dom')['NavLink']
   const observable: typeof import('mobx')['observable']
   const observe: typeof import('mobx')['observe']
+  const observer: typeof import('mobx-react-lite')['observer']
   const onBecomeObserved: typeof import('mobx')['onBecomeObserved']
   const onBecomeUnobserved: typeof import('mobx')['onBecomeUnobserved']
   const onReactionError: typeof import('mobx')['onReactionError']
