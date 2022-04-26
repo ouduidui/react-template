@@ -32,6 +32,7 @@ export default defineConfig({
         'react-router-dom',
         'mobx',
         { 'usehooks-ts': ['useCounter', 'useDarkMode'] },
+        { mobx: ['configure'] },
         { react: ['createContext'] },
       ],
       dts: 'src/auto-imports.d.ts',

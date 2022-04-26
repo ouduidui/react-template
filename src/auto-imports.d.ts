@@ -4,6 +4,7 @@ declare global {
   const action: typeof import('mobx')['action']
   const autorun: typeof import('mobx')['autorun']
   const computed: typeof import('mobx')['computed']
+  const configure: typeof import('mobx')['configure']
   const createContext: typeof import('react')['createContext']
   const createRef: typeof import('react')['createRef']
   const extendObservable: typeof import('mobx')['extendObservable']
