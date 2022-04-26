@@ -4,11 +4,14 @@ export interface TodoType {
   id: number
   content: string
   done: boolean
-  createAt: number
 }
 
 class TodoListStore {
-  todos: TodoType[] = []
+  todos: TodoType[] = [{
+    id: 1,
+    content: 'Study React.',
+    done: false,
+  }]
 
   constructor() {
     makeAutoObservable(this, {}, { autoBind: true })
@@ -24,7 +27,6 @@ class TodoListStore {
       id: this.todos.length + 1,
       content,
       done: false,
-      createAt: Date.now(),
     })
   }
 
