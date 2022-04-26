@@ -23,10 +23,16 @@ export default defineConfig({
 
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
+      include: [
+        /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
+        /\.md$/, // .md
+      ],
       imports: [
         'react',
         'react-router-dom',
+        'mobx',
         { 'usehooks-ts': ['useCounter', 'useDarkMode'] },
+        { react: ['createContext'] },
       ],
       dts: 'src/auto-imports.d.ts',
     }),

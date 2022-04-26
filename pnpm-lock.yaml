@@ -11,6 +11,8 @@ specifiers:
   '@vitejs/plugin-react': ^1.3.0
   eslint: ^8.14.0
   jsdom: ^19.0.0
+  mobx: ^6.5.0
+  mobx-react-lite: ^3.3.0
   react: ^18.0.0
   react-dom: ^18.0.0
   react-router-dom: ^6.3.0
@@ -23,6 +25,8 @@ specifiers:
   vitest: ^0.10.0
 
 dependencies:
+  mobx: 6.5.0
+  mobx-react-lite: 3.3.0_ec6945183068133ff61c88d19e8f3079
   react: 18.0.0
   react-dom: 18.0.0_react@18.0.0
   react-router-dom: 6.3.0_react-dom@18.0.0+react@18.0.0
@@ -2828,6 +2832,28 @@ packages:
   /minimist/1.2.6:
     resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
     dev: true
+
+  /mobx-react-lite/3.3.0_ec6945183068133ff61c88d19e8f3079:
+    resolution: {integrity: sha512-U/kMSFtV/bNVgY01FuiGWpRkaQVHozBq5CEBZltFvPt4FcV111hEWkgwqVg9GPPZSEuEdV438PEz8mk8mKpYlA==}
+    peerDependencies:
+      mobx: ^6.1.0
+      react: ^16.8.0 || ^17
+      react-dom: '*'
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      mobx: 6.5.0
+      react: 18.0.0
+      react-dom: 18.0.0_react@18.0.0
+    dev: false
+
+  /mobx/6.5.0:
+    resolution: {integrity: sha512-pHZ/cySF00FVENDWIDzJyoObFahK6Eg4d0papqm6d7yMkxWTZ/S/csqJX1A3PsYy4t5k3z2QnlwuCfMW5lSEwA==}
+    dev: false
 
   /mrmime/1.0.0:
     resolution: {integrity: sha512-a70zx7zFfVO7XpnQ2IX1Myh9yY4UYvfld/dikWRnsXxbyvMcfz+u6UfgNAtH+k2QqtJuzVpv6eLTx1G2+WKZbQ==}
