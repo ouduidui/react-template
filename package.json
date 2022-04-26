@@ -1,11 +1,22 @@
 {
-  "name": "vite-project",
-  "private": true,
+  "name": "react-template",
   "version": "0.0.0",
-  "scripts": {
-    "dev": "vite --host",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ouduidui/[name].git"
+  },
+  "author": "Dewey Ou <oushihao97@gmail.com>",
+    "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "test:unit": "vitest",
+    "format": "eslint \"**/*.{vue,ts,js}\" --fix",
+    "lint": "eslint \"**/*.{vue,ts,js}\"",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
     "mobx": "^6.5.0",

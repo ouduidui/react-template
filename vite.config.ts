@@ -39,4 +39,7 @@ export default defineConfig({
       dts: 'src/auto-imports.d.ts',
     }),
   ],
+  server: {
+    host: true,
+  },
 })
